@@ -14,7 +14,7 @@ const About = () => {
           />
         </div>
         <div className="lg:w-1/2 mt-12 lg:mt-0">
-          <h4 className="text-3xl text-orange-700 font-semibold pb-4">
+          <h4 className="text-3xl text-[#FF3811] font-semibold pb-4">
             About Us
           </h4>
           <h1 className="text-5xl font-bold">
