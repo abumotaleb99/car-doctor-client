@@ -1,8 +1,9 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const ServiceCard = ({ service }) => {
-  const { title, img, price } = service;
+  const { _id, title, img, price } = service;
 
   return (
     <div className="card bg-base-100 border">
@@ -15,7 +16,10 @@ const ServiceCard = ({ service }) => {
           <p className="text-[#FF3811] font-semibold pt-3">Price : ${price}</p>
         </div>
         <div className="card-actions">
-          <FaArrowRight className="text-[#FF3811] hover:text-[#e9310c] cursor-pointer" />
+          {/* <FaArrowRight className="text-[#FF3811] hover:text-[#e9310c] cursor-pointer" /> */}
+          <Link to={`/checkout/${_id}`} className="btn btn-primary">
+            Book Now
+          </Link>
         </div>
       </div>
     </div>
