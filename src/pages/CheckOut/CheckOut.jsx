@@ -89,7 +89,7 @@ const CheckOut = () => {
               type="text"
               name="price"
               placeholder="Price"
-              defaultValue={"$" + price}
+              defaultValue={price}
               className="input input-bordered"
             />
           </div>
